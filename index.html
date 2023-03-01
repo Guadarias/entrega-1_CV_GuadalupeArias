@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_JamieHarvey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <main class="main-content">
+        <section class="left-section">
+        <div class="nav-bar" onclick="mostrarocultarmenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+        <nav id="nav" class="nav"> 
+            <a href="#contact-info">Información de Contacto</a>
+            <a href="#info">Información Personal</a>
+            <a href="#right-title1">Perfil Profesional</a>
+            <a href="#right-title2">Experiencia Laboral</a>
+            <a href="#right-title3">Educación</a>
+            <a href="#right-title4">Seminarios y Otros</a>
+            <a href="#right-title5">Otros Conocimientos</a>
+        </nav>
+       <script src="APP.JS"></script>
+        <div class="left-content">
+            <div class="profile">
+                 <img src="jamieharvey.jpg" alt="Mi foto">
+                 <div class="logo">J
+                    <span class="color">H</span></div>
+                 <h2 class="name"> Jamie Harvey</h2>
+                 <p class="career">Licenciada en Ciencias Geológicas</p>
+            </div> 
+            <div class="redes">
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+            </div>
+            <div class="contact-info">
+            <h3 id="contact-info" class="main-title">Información de Contacto</h3>
+                <ul>
+                    <li>
+                        <i id=phone class="fa fa-phone"> <a href="tel:+54 11 5432 1098" >+54 11 5432 1098</a></i> 
+                    </li>
+                    <li>
+                        <i id=envelope class="fa fa-envelope"></i>
+                        <a href="mailto:jamieharvet@gmail.com" target="_blank">jamieharvey@gmail.com</a> 
+                    </li>
+                    <li>
+                        <i id=map class="fa fa-map-marker"></i>
+                        <a href="https://goo.gl/maps/kg1xQVQpfzBKJmMJ6" >Av. San Martín 1234, Mendoza</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h3 id="info" class="main-title">Información Personal</h3>
+                <ul>
+                    <li> <b>D.N.I.:</b> 28.456.785 </li>
+                    <li> <b>Fecha de Nacimiento:</b> 01/08/1980</li>
+                    <li> <b>Estado Civil:</b> Casada</li>
+                    <li> <b>Nacionalidad:</b> Argentina</li>
+                    <li> <b>Otros intereses:</b> Yoga, bicicleta, manualidades, cerámica, construcción natural, horticultura, viajar</li>                
+                </ul>
+            </div>
+            <div class="referencias">
+                <h3 id="referencias" class="main-title">Referencias</h3>
+                <ul>
+                    <li> <b>Elaine Rigas</b>
+                         <p> Gerente de WSP Parsons Brinckerhoff - Chile </p>
+                         <button type="button" id="botonemail1" class="fa fa-envelope"></button>
+                             <p id="email" class="email"></p>
+                                <script>
+                                    document.getElementById ('botonemail1').addEventListener('click',function(){
+                                    console.log ("Email:elainerigas@wsp.com");
+                                    document.getElementById("email").innerHTML="elainerigas@wsp.com"                                            
+                                    });
+                                </script>                                    
+                    </li>
+                    <li> <b>José Luis Ruano</b>
+                        <p>Gerente de Schlumberger Water Services - Chile<p> 
+                            <button type="button" id="botonemail2" class="fa fa-envelope"></button>
+                            <p id="email2" class="email"></p>
+                            <script>
+                                document.getElementById ('botonemail2').addEventListener('click',function(){
+                                console.log ("Email:jlruano@sws.com");
+                                document.getElementById("email2").innerHTML="jlruano@sws.com"
+                                });
+                            </script>   
+                   </li>
+                   <li> <b>Sergio Alvarez</b>
+                        <p>Gerente de Schlumberger WesternGeco - Argentina</p>
+                        <button type="button" id="botonemail3" class="fa fa-envelope"></button>
+                        <p id="email3" class="email"></p>
+                        <script>
+                            document.getElementById ('botonemail3').addEventListener('click',function(){
+                            console.log ("Email:salvarez@westerngeco.com");
+                            document.getElementById("email3").innerHTML="salvarez@westerngeco.com"
+                             });
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="right-section">
+            <div class="right-content">
+                <div class="right-main-content">
+                    <h2 id=right-title1 class="right-title">Perfil Profesional</h2>
+                    <p class="para">Experiencia de más de 15 años en consultoría, principalmente en empresas multinacionales, tanto en el área de procesamiento de dato sísmico, como en el sector de estudios hidrogeológicos, desarrollando proyectos de energía y minería respectivamente.
+                        <br></br> Me motiva el trabajo interdisciplinario en equipo, aprendiendo, compartiendo y colaborando continuamente junto a mi entorno. 
+                        <br></br> Experiencia profesional en los siguientes países: Argentina y Chile.
+                    </p>
+                <section class="Experiencia">
+                    <h2 id="right-title2" class="right-title">Experiencia Laboral</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">WSP Parsons Brinckerhoff - Chile</h5> 
+                            <p class="para">2020-Presente</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Geóloga de Proyectos</h5>
+                                <p class="para">Supervisión de sondajes de monitoreo de niveles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Schlumberger Water Services - Chile</h5> 
+                            <p class="para">2015-2020</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Geóloga de Proyectos</h5>
+                                <p class="para">
+                                    <ul class="list">
+                                      <li class="items">Supervisión de campañas de perforación de pozos hidrogeológicos.</li>
+                                      <li class="items">Mapeo geológico, geotécnico, hidrogeológico  de testigos y cuttings. Muestreo.</li>
+                                      <li class="items">Procesamiento e interpretación de investigaciones hidrogeológicas y geológicas. </li>
+                                      <li class="items">Procesamiento y análisis de datos hidrogeológicos, meteorológicos.</li>
+                                    </ul>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">WesternGeco, Schlumberger - Argentina</h5> 
+                            <p class="para">2007-2015</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Ingeniera Sísmica</h5>
+                                <p class="para">Procesamiento de datos sísmicos (sísmica de reflexión) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">AES DISAB - Argentina</h5> 
+                            <p class="para">2006-2007</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Geóloga de Proyectos</h5>
+                                <p class="para">Análisis de contaminación de suelos y aguas subterráneas </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="Educación">
+                    <h2 id="right-title3"class="right-title">Educación</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Universidad Nacional del Sur - Argentina</h5> 
+                            <p class="para">2001-2006</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Licenciada en Ciencias Geológicas</h5>   
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+                <section class="Seminarios">
+                    <h2 id="right-title4" class="right-title">Seminarios y Otros</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Universidad Tecnológica Nacional, Facultad Regional Resistencia</h5> 
+                            <p class="para">2020</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Curso: Control Microbiológico del Agua</h5>
+                            </div>
+                        </div>
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Universidad de Chile, Facultad de Ciencias Físicas y Matemáticas, Departamento de Geología</h5> 
+                            <p class="para">2013</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title2">Diplomado de Hidrogeología aplicada a la Minería y Medio Ambiente</h5>
+                                <p class="para">Módulo 3: Escurrimiento en medios permeables e hidraúlica de captaciones subterráneas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section class="Skills">
+                    <h2 id="right-title5"class="right-title">Otros Conocimientos</h2>
+                    <h3 class="tl-title">Idiomas</h3>
+                    <ul class="list">
+                        <li class="items">Español: nativo</li>
+                        <li class="items">Inglés: oral y escrito nivel intermedio alto</li>
+                        <li class="items">Francés: oral y escrito nivel intermedio alto</li>
+                        <li class="items">Alemán: oral y escrito nivel intermedio</li>
+                        <li class="items">Portugués:oral y escrito nivel intermedio</li>
+                </ul>
+                <h3 class="tl-title">Computación</h3>
+                <p class="para">Conocimientos nivel usuario de MS Office, AutoCAD, ArcGis, Petrel, Omega, HTML, CSS, JavaScript.
+                </p>
+                </section>    
+                </div>
+            </div> 
+        </section>
+    </main>
+
+   </body>>
+</html>

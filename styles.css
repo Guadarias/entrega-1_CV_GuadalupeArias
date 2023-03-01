@@ -1,0 +1,332 @@
+*{
+    padding:0;
+    margin:0;
+    box-shadow: border-box;
+    list-style: none;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    background-color:antiquewhite;
+}
+.main-content{
+    min-height: 100vh;
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.left-section{
+  grid-column: span 2;  
+  height: 100%;
+  background-color: darkslateblue;
+  
+  margin-left: 16px;
+  margin-top: 20px;
+  
+}
+.right-section{
+    grid-column: span 5;
+    background-color: lightgray;
+    height: 100%;
+    margin-top: 20px
+}
+.left-content{
+    padding: 1rem 2rem;
+    color:darkgrey
+
+}
+.profile{
+    width:100%
+}
+.profile img{
+    
+    width: 60%;
+    border-radius: 50%;
+    border: 6px solid rgb(121, 121, 233);
+    margin-left: 50px;
+    
+}
+.name{
+    font-size: 2rem;
+    color:antiquewhite;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+.career{
+    font-size:1.6rem ;
+   
+    color:antiquewhite;
+    letter-spacing: 1px;
+    padding:1.2rem 0;
+    text-align: center;
+}
+.nav{
+    position:fixed;
+    margin-left:60px;
+    background-color: aliceblue;
+    padding:15px;
+    border-radius:10px;
+    text-align:left;
+    z-index:99;
+    display:none;
+    border:2px solid rgb(121, 121, 233);
+}
+.nav a {
+    display:block;
+    color:darkblue;
+    text-decoration:none;
+    margin-bottom:10px;
+    line-height:1rem;
+    font-size: 15px;
+}
+.nav a:hover{
+    box-shadow:0 0 35px  rgb(121, 121, 233);
+}
+.nav-bar{
+    position:fixed;
+    background-color:aliceblue;
+    font-size:20px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    line-height:50px;
+    cursor:pointer;
+    transition:.3s;
+    margin-top: 10px;
+    margin-left: 10px;
+    border:2px solid rgb(121, 121, 233);
+}
+.nav-bar:hover{
+    box-shadow:0 0 35px #afd8eb;
+}
+.fa{
+    color: darkblue;
+    padding:1rem;
+}
+.logo{
+    font-weight: bold;
+    font-size:2.5rem;
+    font-family:yellowtail;
+    text-shadow: 0 0 35px #afd8eb;
+    color:antiquewhite;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+.color{
+    font-weight: bold;
+    font-size:2.5rem;
+    font-family:yellowtail;
+    text-shadow: 0 0 35px #afd8eb;
+    color:rgb(121, 121, 233);
+    text-align: center;
+}
+.main-title{
+    font-size: 1.2rem;
+    color:aliceblue;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.redes{
+    margin:20 0;
+}
+.redes a{
+    display:inline-block;
+    width:40px;
+    height: 40px;
+    transition: .3s;
+    border-radius:50%;
+    background-color: aliceblue;
+    color:rgb(136, 157, 248);
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 5px;
+    border:solid 2px rgb(121, 121, 233);
+}
+.redes a:hover{
+    box-shadow:0 0 20px #afd8eb;
+}
+.contact-info ul{
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.contact-info ul li{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: aliceblue;
+    padding:0.3rem;
+}
+
+.contact-info ul li a{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: aliceblue;
+    padding:0.3rem;
+    text-align: justify;
+    cursor:pointer;
+ }
+.contact-info ul li i{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: rgb(136, 157, 248);
+    padding:0.3rem;
+    border-radius: 50%;
+}
+.contact-info ul li a:hover{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: rgb(136, 157, 248);
+    padding:0.3rem;
+    box-shadow:0 0 10px #afd8eb;
+}
+.info ul{
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.info ul li{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: aliceblue;
+    padding:0.3rem;
+    text-align: justify;
+}
+
+.referencias ul{
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.referencias ul li{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: aliceblue;
+    padding:0.3rem;
+    text-align: justify;
+    
+}
+.referencias ul li button{
+ 
+letter-spacing: 2px;
+font-size: 1.5rem;
+color: rgb(136, 157, 248);
+padding:0.3rem;
+border-radius: 50%;
+background-color: none;
+border:solid 1.5px rgb(136, 157, 248);
+cursor:pointer
+}
+.referencias ul li button:hover{
+    box-shadow:0 0 10px #afd8eb;
+}
+
+
+
+
+/*SECCIÓN DERECHA*/
+.right-main-content{
+padding: 2rem 3rem;
+}
+.right-title{
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    color:darkblue;
+    margin-bottom: 1.2rem;
+    position:relative;
+}
+.right-title::after{
+    content:"";
+    position:absolute;
+    width:50%;
+    height:0.2rem;
+    background-color: darkslateblue;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius: 15px;
+}
+
+.para{
+    color:darkblue;
+    text-align: justify;
+    line-height: 1.2rem;
+    padding:1rem 0;
+}
+.list{
+    padding:1rem 0;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.tl-title{
+    letter-spacing: 1px;
+    font-size:1rem;
+    color:darkblue;
+    text-transform:uppercase;    
+    padding-top: 1rem;
+}
+.tl-title2{
+    letter-spacing: 1px;
+    font-size:1rem;
+    color:rgb(169, 169, 228);
+    text-transform:uppercase;
+    position:relative;
+    
+}
+
+.right-tl-content{
+    border-left: 1px solid grey;
+    padding-left:2rem;
+    padding-bottom: 2rem;
+   
+}
+.tl-title2::after{
+    content: "";
+    position:absolute;
+}
+.tl-title2::before{
+    content:"";
+    position:absolute;
+    width:.7rem;
+    height:.7rem;
+    background-color: rgb(169, 169, 228);
+    border-radius: 50%;
+    left:-38px;
+}
+.items{
+    list-style-type: circle;
+    color:darkblue;
+}
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:823px) {
+    .right-title::after{
+        width: 40%
+    }  
+}
+@media screen and (max-width:681px) {
+    .right-title::after{
+        width: 30%
+    }  
+}
+@media screen and (max-width:780px) {
+    .timeline{
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
+@media screen and (max-width:780px) {
+    .left-section{
+        grid-column: span 3;
+    }  
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
